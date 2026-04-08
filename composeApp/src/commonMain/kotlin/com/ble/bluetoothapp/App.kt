@@ -21,7 +21,7 @@ fun App() {
                 .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            com.ble.bluetoothapp.ui.ScannerScreen()
+            com.ble.bluetoothapp.ui.BleChatScreen()
         }
     }
 }
