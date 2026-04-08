@@ -1,0 +1,19 @@
+{
+  "module": "composeApp",
+  "files_changed": [
+    "composeApp/src/commonMain/kotlin/caonguyen/vu/ui/components/SensorChart.kt",
+    "composeApp/src/commonMain/kotlin/caonguyen/vu/ui/dashboard/MonitoringScreen.kt",
+    "composeApp/src/commonMain/kotlin/caonguyen/vu/ui/dashboard/DashboardScreen.kt",
+    "composeApp/src/commonMain/kotlin/caonguyen/vu/ui/dashboard/DashboardViewModel.kt"
+  ],
+  "_fda": {
+    "requirements_implemented": [
+      "REQ-SYS-CHART-01",
+      "REQ-SYS-CHART-02",
+      "REQ-SYS-CHART-03",
+      "REQ-SYS-CHART-04"
+    ],
+    "soups_introduced": [],
+    "risks": []
+  }
+}

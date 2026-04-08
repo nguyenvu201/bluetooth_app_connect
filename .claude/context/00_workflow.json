@@ -1,0 +1,34 @@
+{
+  "_schema": "kmp-workflow/v2",
+  "_file": "00_workflow.json",
+  "_written_by": "kmp-orchestrator",
+  "_timestamp": "2026-04-07T14:26:25.136967Z",
+  "workflow": {
+    "name": "Chart UI Issues",
+    "feature": "Chart is jittery and missing numeric annotations for readability",
+    "status": "started",
+    "started_at": "2026-04-07T14:26:25.137100Z",
+    "completed_at": null
+  },
+  "tech_stack": {
+    "package": "caonguyen.vu",
+    "navigation": "Voyager",
+    "mqtt_client": "HiveMQ",
+    "testing": "kotlin-test + coroutines-test",
+    "di": "Koin",
+    "orm": "Exposed",
+    "rs485": "jSerialComm"
+  },
+  "decisions": [],
+  "agent_status": {
+    "kmp-orchestrator": "pending",
+    "kmp-architect": "pending",
+    "kmp-shared": "pending",
+    "kmp-iot": "pending",
+    "kmp-ktor-backend": "pending",
+    "kmp-compose": "pending",
+    "kmp-devops": "pending",
+    "kmp-qa": "pending",
+    "kmp-security": "pending"
+  }
+}

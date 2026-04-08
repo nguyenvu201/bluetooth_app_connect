@@ -1,0 +1,24 @@
+{
+  "_schema": "kmp-workflow/v2",
+  "_file": "04_ktor.json",
+  "_written_by": "kmp-ktor-backend",
+  "_timestamp": "2026-04-07T13:46:20Z",
+  "_status": "success",
+  "_reads": ["01_architect.json"],
+  "summary": "Implemented Ktor routes and database tables for SensorData",
+  "outputs": {
+    "db_tables": ["SensorTable"],
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/api/sensors/temperature/latest",
+        "handler": "SensorRoutes.kt"
+      }
+    ]
+  },
+  "_fda": {
+    "doc_ref": "SDD-002",
+    "requirements_implemented": ["REQ-B006", "REQ-B007"],
+    "soups_used": ["Ktor Server", "Exposed"]
+  }
+}

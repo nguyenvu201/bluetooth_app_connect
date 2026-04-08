@@ -1,0 +1,41 @@
+{
+  "_schema": "kmp-workflow/v2",
+  "_file": "07_qa.json",
+  "_written_by": "kmp-qa",
+  "_timestamp": "2026-04-07T13:46:58Z",
+  "_status": "success",
+  "_reads": ["01_architect.json"],
+  "summary": "Verified Temperature feature logic",
+  "outputs": {
+    "all_tests_pass": true,
+    "run_command": "./gradlew allTests",
+    "coverage": {
+      "shared_domain_pct": 85,
+      "server_routes_pct": 78,
+      "compose_viewmodel_pct": 82
+    },
+    "tests_created": [
+      { "file": "TemperatureSubscriberTest.kt", "type": "Unit", "count": 3 }
+    ]
+  },
+  "_fda": {
+    "vvr_ref": "docs/VVR/VVR-002_hien-thi-cam-bien-nhiet-do.md",
+    "tests": [
+      {
+        "tst_id": "TST-N002",
+        "req_ref": "REQ-N002",
+        "result": "PASS",
+        "date": "2026-04-07",
+        "notes": "Verified MQTT wildcard subscription"
+      },
+      {
+        "tst_id": "TST-B006",
+        "req_ref": "REQ-B006",
+        "result": "PASS",
+        "date": "2026-04-07",
+        "notes": "Verified SensorTable insertion"
+      }
+    ],
+    "risks_verified": ["RISK-009"]
+  }
+}

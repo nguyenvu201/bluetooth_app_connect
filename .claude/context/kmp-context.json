@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "description": "Master context cho KMP IoT Engineering Team orchestration",
+  "project": {
+    "name": "KMPRoadMap",
+    "type": "kotlin-multiplatform-iot",
+    "path": "/Volumes/SSD_MAC_EXTEND/Learn/Antigravity/KMP/KMPRoadMap",
+    "description": "IoT application built with Kotlin Multiplatform",
+    "requirements": []
+  },
+  "tech_stack": {
+    "shared": {
+      "language": "Kotlin Multiplatform",
+      "targets": ["androidTarget", "iosTarget", "jvm", "desktop"],
+      "di": "Koin 3.5+",
+      "async": "Coroutines + Flow",
+      "local_db": "SQLDelight 2.0+",
+      "serialization": "kotlinx.serialization"
+    },
+    "ui": {
+      "framework": "Compose Multiplatform",
+      "design_system": "Material Design 3",
+      "navigation": "Navigation Compose",
+      "state": "StateFlow + ViewModel"
+    },
+    "backend": {
+      "framework": "Ktor 2.3+",
+      "engine": "Netty",
+      "orm": "Exposed",
+      "database": "PostgreSQL",
+      "auth": "JWT"
+    },
+    "iot": {
+      "protocols": ["MQTT", "RS485/Modbus", "WebSocket"],
+      "broker": "Eclipse Mosquitto",
+      "devices": ["ESP8266", "ESP32", "RS485 sensors"]
+    },
+    "devops": {
+      "containerization": "Docker",
+      "compose": "docker-compose",
+      "ci_cd": "GitHub Actions",
+      "build": "Gradle KTS"
+    },
+    "testing": {
+      "unit": "Kotest 5.8+ / kotlin-test",
+      "mocking": "MockK 1.13+",
+      "coroutines": "kotlinx-coroutines-test",
+      "ui": "Compose UI Test",
+      "api": "ktor-test"
+    }
+  },
+  "modules": {
+    "shared": "shared/",
+    "compose_app": "composeApp/",
+    "server": "server/",
+    "ios_app": "iosApp/"
+  },
+  "workflow": {
+    "current_phase": "",
+    "completed_phases": [],
+    "next_phases": []
+  },
+  "agent_outputs": {
+    "architect": null,
+    "shared": null,
+    "compose": null,
+    "ktor_backend": null,
+    "iot": null,
+    "devops": null,
+    "qa": null,
+    "security": null
+  },
+  "constraints": {
+    "team_size": 1,
+    "target_platforms": ["Android", "Desktop", "iOS", "Server"],
+    "iot_devices": [],
+    "deployment": "docker-compose"
+  },
+  "metadata": {
+    "created_at": "",
+    "updated_at": "",
+    "created_by": "kmp-orchestrator",
+    "schema_version": "1.0.0"
+  }
+}

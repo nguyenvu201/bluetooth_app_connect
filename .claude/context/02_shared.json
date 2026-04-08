@@ -1,0 +1,13 @@
+{
+  "module": "shared",
+  "files_changed": [
+    "shared/src/commonMain/kotlin/caonguyen/vu/shared/models/SensorData.kt"
+  ],
+  "_fda": {
+    "requirements_implemented": [
+      "REQ-SYS-CHART-01"
+    ],
+    "soups_introduced": [],
+    "risks": []
+  }
+}

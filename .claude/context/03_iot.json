@@ -1,0 +1,29 @@
+{
+  "_schema": "kmp-workflow/v2",
+  "_file": "03_iot.json",
+  "_written_by": "kmp-iot",
+  "_timestamp": "2026-04-07T13:46:10Z",
+  "_status": "success",
+  "_reads": ["01_architect.json"],
+  "summary": "Implemented MQTT Subscriber for esp8266 temperature data",
+  "outputs": {
+    "devices": [
+      {
+        "id_prefix": "esp8266_",
+        "type": "Temperature Sensor Node",
+        "sensors": ["DHT11", "DS18B20"],
+        "actuators": []
+      }
+    ],
+    "mqtt_topics": {
+      "subscribe": ["sensor/temperature/+/data"],
+      "publish": []
+    },
+    "data_flow": "ESP8266 -> MQTT -> TemperatureSubscriber -> SensorTable"
+  },
+  "_fda": {
+    "doc_ref": "SDD-002",
+    "requirements_implemented": ["REQ-N002"],
+    "soups_used": ["HiveMQ"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_schema": "kmp-workflow/v2",
+  "_file": "08_security.json",
+  "_written_by": "kmp-security",
+  "_timestamp": "2026-04-07T13:47:11Z",
+  "_status": "success",
+  "_reads": ["01_architect.json"],
+  "summary": "Security review for Temperature feature",
+  "outputs": {
+    "critical_issues": [],
+    "warnings": []
+  },
+  "_fda": {
+    "rm_ref": "RM-001",
+    "risks_reviewed": [
+      {
+        "risk_id": "RISK-009",
+        "status": "verified"
+      }
+    ]
+  }
+}
